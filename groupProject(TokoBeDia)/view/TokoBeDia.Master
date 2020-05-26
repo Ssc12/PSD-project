@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TokoBeDia.master.cs" Inherits="groupProject_TokoBeDia_.view.TokoBeDia" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title></title>
+      <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="margin:0 ; padding-top:0" >
+    <form id="form1" runat="server">
+          
+      <div style="background-color:coral ; width:100% ; height:80px; ">
+          <div style="background-color:coral ; padding-top:30px">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Label ID="Label1" runat="server" Text="TokoBeDia"></asp:Label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<asp:Button ID="gotoHomepgBtnId" runat="server" OnClick="gotoHomePg" Text="Home" Width="144px" />
+                &nbsp;
+                <asp:Button ID="viewProductBtnId" runat="server"  Text="View Product" Width="141px" OnClick="gotoViewProductPg" />
+                &nbsp;
+                <asp:Button ID="viewProfileBtnId" runat="server" Text="View Profile" Width="138px" OnClick="gotoProfilePage" />
+                &nbsp;
+                <asp:Button ID="guestLoginBtnId" runat="server"  Text="Login" Width="141px" OnClick="gotoLoginPg" />
+                <asp:Button ID="LogoutBtnId" runat="server"  Text="Logout" Width="141px" OnClick="doLogOut" />
+              </div>
+         </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            <div>
+
+
+            </div>
+    </form>
+</body>
+</html>
